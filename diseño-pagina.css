@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #111111; /* Un negro suave, más editorial que el negro puro */
+    background-color: #ffffff;
+    line-height: 1.6; /* Espaciado perfecto entre líneas para descanso visual */
+    margin: 0;
+    padding: 40px 20px; /* Margen para que el contenido respire */
+}
+
+/* Contenedor principal para que el sitio no se desparrame en pantallas grandes */
+.container, body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 2. Jerarquía Tipográfica */
+h1 {
+    font-family: 'Playfair Display', 'Georgia', serif; /* Serif elegante para tu nombre */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+/* Tu puesto de Diseñador & Director de Arte */
+p.puesto, .disenador-sub { 
+    font-size: 1rem;
+    text-transform: uppercase; /* Estilo clásico de revista */
+    letter-spacing: 2px;
+    color: #666666;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea; /* Línea sutil divisoria */
+    padding-bottom: 10px;
+}
+
+/* 3. Legibilidad Perfecta para Párrafos y Descripciones */
+p {
+    font-size: 1.1rem; /* Tamaño óptimo para lectura cómoda en pantallas */
+    color: #333333;
+    margin-bottom: 25px;
+    text-align: justify; /* Alineación limpia y estructurada */
+}
+
+/* Detalles de categorías (ej. Dirección de Arte / Fotomontaje) */
+.categoria, p strong {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555555;
+}
+
+/* 4. Centrado Absoluto y Estética de Imágenes */
+img {
+    display: block;
+    max-width: 100%; /* Se adapta al tamaño de la pantalla sin deformarse */
+    height: auto;
+    margin: 35px auto; /* El "auto" a los lados centra la imagen automáticamente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra extremadamente sutil */
+    transition: transform 0.3s ease;
+}
+
+/* Si tienes dos imágenes juntas (como en El Hombre de Lava), este contenedor las centra */
+.galeria-doble {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 35px 0;
+}
+
+.galeria-doble img {
+    margin: 0; /* Quita el margen individual para que el flexbox haga su trabajo */
+    width: 48%; /* Hace que quepan las dos perfectamente alineadas */
+}
+
+/* 5. Navegación e Hipervínculos Limpios */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #999999; /* Efecto sutil al pasar el cursor */
+}
